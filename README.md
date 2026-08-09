@@ -53,21 +53,21 @@ Because the dataset represents a relatively small sample of Fitbit users and a l
 
 ```text
 fitbit-user-behavior-analysis/
-├── README.md
+├── images/
+│   ├── q1_weekday_weekend_activity.png
+│   ├── q2_sleep_efficiency.png
+│   └── q3_daily_activity_patterns.png
 ├── sql/
 │   ├── 00_data_preparation.sql
 │   ├── 01_q1_weekday_weekend_activity.sql
 │   ├── 02_q2_sleep_efficiency.sql
 │   ├── 03_q3_activity_timing_distribution.sql
 │   └── 04_tableau_preparation.sql
-└── images/
-    ├── q1_weekday_weekend_activity.png
-    ├── q2_sleep_efficiency.png
-    └── q3_daily_activity_patterns.png
+└── README.md
 ```
 
-- **`sql/`** contains the PostgreSQL data preparation, analysis, validation, and Tableau-ready dataset creation.
 - **`images/`** contains previews of the three Tableau dashboards.
+- **`sql/`** contains the PostgreSQL data preparation, analysis, validation, and Tableau-ready dataset creation.
 - **`README.md`** documents the business problem, methodology, findings, product recommendations, and interactive Tableau story.
 ## Data Preparation & Methodology
 
