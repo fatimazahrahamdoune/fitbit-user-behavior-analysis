@@ -240,3 +240,10 @@ The final analysis is presented through an interactive Tableau Story containing 
 ![Activity Timing and Distribution Patterns](images/q3_daily_activity_patterns.png)
 
 **How to read it:** The first visualization compares average activity across different times of day. The second compares average daily calories for more concentrated versus more distributed activity within similar step ranges.
+## Usage & Attribution
+
+© 2026 Fatima Zahra Hamdoune. All rights reserved.
+
+This project was created for educational and portfolio purposes. The analysis, SQL code, visualizations, findings, and product recommendations may not be copied, reproduced, redistributed, or presented as another person's work without permission.
+
+The original Fitbit dataset is credited to its respective source and is not owned by the author of this project.
