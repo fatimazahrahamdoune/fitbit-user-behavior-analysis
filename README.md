@@ -38,6 +38,7 @@ The analysis primarily uses:
 
 - **Daily Activity Data** : daily steps, calories, distance, and activity levels
 - **Hourly Steps Data** : step counts recorded throughout the day
+- **Hourly Calories Data** : calories recorded throughout the day
 - **Hourly Intensity Data** : activity intensity recorded throughout the day
 - **Sleep Data** : total minutes asleep and total time in bed
 
@@ -48,6 +49,26 @@ Because the dataset represents a relatively small sample of Fitbit users and a l
 - **PostgreSQL** : data cleaning, transformation, validation, segmentation, and analysis
 - **Tableau Public** : interactive visualizations, dashboards, and final data story
 - **GitHub** : project documentation and code repository
+## Repository Structure
+
+```text
+fitbit-user-behavior-analysis/
+├── README.md
+├── sql/
+│   ├── 00_data_preparation.sql
+│   ├── 01_q1_weekday_weekend_activity.sql
+│   ├── 02_q2_sleep_efficiency.sql
+│   ├── 03_q3_activity_timing_distribution.sql
+│   └── 04_tableau_preparation.sql
+└── images/
+    ├── q1_weekday_weekend_activity.png
+    ├── q2_sleep_efficiency.png
+    └── q3_daily_activity_patterns.png
+```
+
+- **`sql/`** contains the PostgreSQL data preparation, analysis, validation, and Tableau-ready dataset creation.
+- **`images/`** contains previews of the three Tableau dashboards.
+- **`README.md`** documents the business problem, methodology, findings, product recommendations, and interactive Tableau story.
 ## Data Preparation & Methodology
 
 Before answering the research questions, the datasets were reviewed and prepared in PostgreSQL to ensure the analysis was based on consistent and reliable records.
@@ -96,6 +117,8 @@ Sleep efficiency was calculated as the percentage of time in bed that a user act
 
 Average sleep efficiency was calculated for each of the 24 users with available sleep data and grouped into analytical efficiency segments.
 
+For this case study, users were segmented as Low (<85%), Moderate (85%–<95%), and High (≥95%) sleep efficiency. These thresholds are analytical categories used for this project rather than clinical classifications.
+
 **Results:**
 
 - **Moderate Efficiency:** 16 users (66.7%)
@@ -130,8 +153,7 @@ Across **16 comparable step ranges**:
 - Distributed activity showed higher average calories in **9 ranges**.
 - Concentrated activity showed higher average calories in **7 ranges**.
 
-**Key Finding:**  
-**Key Finding:**  
+**Key Finding:**   
 Activity was highest during the afternoon and evening. When comparing days with similar total step counts, distributed activity showed higher average calorie expenditure in 9 of 16 comparable step ranges, while concentrated activity was higher in 7.
 
 Because the difference was relatively small, neither activity pattern consistently showed higher calorie expenditure. This suggests that overall activity volume may be more important than how activity is distributed throughout the day, although further analysis would be needed to confirm this relationship.
