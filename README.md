@@ -192,8 +192,27 @@ These recommendations should function as behavioral support rather than medical 
 
 The final analysis is presented through an interactive Tableau Story containing three dashboards:
 
-- **Weekday vs. Weekend Activity Patterns** – explores user activity segments and compares average weekday and weekend steps.
-- **Sleep Efficiency Patterns** – shows the distribution of sleep-efficiency segments and differences in average sleep efficiency across users.
-- **Activity Timing & Distribution Patterns** – examines activity throughout the day and compares calorie expenditure across activity-distribution patterns.
+- **Weekday vs. Weekend Activity Patterns** : explores user activity segments and compares average weekday and weekend steps.
+- **Sleep Efficiency Patterns** : shows the distribution of sleep-efficiency segments and differences in average sleep efficiency across users.
+- **Activity Timing & Distribution Patterns** : examines activity throughout the day and compares calorie expenditure across activity-distribution patterns.
 
 **[View the Interactive Tableau Story](https://public.tableau.com/app/profile/fatima.zahra.hamdoune/viz/FitbitUserBehaviorProductInsights/Story1?publish=yes)**
+### Dashboard Preview
+
+#### Q1: Weekday vs. Weekend Activity
+
+![Weekday vs Weekend Activity](images/q1_weekday_weekend_activity.png)
+
+**How to read it:** Each point represents a Fitbit user. The diagonal reference line represents equal weekday and weekend activity. Points above the line indicate higher weekend activity, while points below the line indicate higher weekday activity.
+
+#### Q2: Sleep Efficiency Patterns
+
+![Sleep Efficiency Patterns](images/q2_sleep_efficiency.png)
+
+**How to read it:** Sleep efficiency represents the percentage of time in bed actually spent asleep. The 85% and 95% reference lines show the thresholds used to classify users into Low, Moderate, and High Efficiency segments.
+
+#### Q3: Activity Timing & Distribution Patterns
+
+![Activity Timing and Distribution Patterns](images/q3_daily_activity_patterns.png)
+
+**How to read it:** The first visualization compares average activity across different times of day. The second compares average daily calories for more concentrated versus more distributed activity within similar step ranges.
