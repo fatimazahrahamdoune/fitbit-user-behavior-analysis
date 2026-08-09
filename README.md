@@ -34,6 +34,8 @@ Analyze Fitbit user data to identify meaningful behavioral patterns, understand 
 
 This project uses the **FitBit Fitness Tracker Data** dataset, which contains personal fitness tracker data from Fitbit users. The data includes daily activity, hourly activity, sleep, steps, calories, and intensity measurements.
 
+**Data Source:** [FitBit Fitness Tracker Data – Kaggle](https://www.kaggle.com/code/nadaemad2002/fitbit-fitness-tracker-data/input?select=Fitabase+Data+4.12.16-5.12.16)
+
 The analysis primarily uses:
 
 - **Daily Activity Data** : daily steps, calories, distance, and activity levels
